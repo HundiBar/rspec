@@ -1,5 +1,8 @@
+require '01-card'
+
 RSpec.describe 'Card' do
   it 'has a type' do
-    Card.new(Ace)
+    card = Card.new('Ace of Spades')
+    expect(card.type).to eq('Ace of Spades')
   end
 end
