@@ -3,7 +3,7 @@ RSpec.describe Hash do
   #built in subject behind scences let(:my_hash) { Hash.new }
 
     it 'should start off empty' do
-      expect(subjet.length).to eq(0)
+      expect(subject.length).to eq(0)
       subject[:some_key] = "Some Value"
       expect(subject.length).to eq(1)
     end
