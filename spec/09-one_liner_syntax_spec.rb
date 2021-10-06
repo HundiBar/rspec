@@ -1,4 +1,5 @@
 RSpec.describe 'shorthand syntax' do
+  #only for subjects
   subject { 5 }
 
   context 'with classic syntax' do
