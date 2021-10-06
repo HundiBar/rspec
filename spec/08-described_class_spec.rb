@@ -1,4 +1,4 @@
-class King
+class Prince
   attr_reader :name
 
   def initialize(name)
@@ -6,8 +6,9 @@ class King
   end
 end
 
-RSpec.describe King do
+RSpec.describe Prince do
   subject { described_class.new("Boris") }
+  # dont hard code name of class.new use the described
   let(:louis) { described_class.new("Louis") }
 
   it 'represents a let: great person' do
