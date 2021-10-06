@@ -6,4 +6,8 @@ RSpec.describe 'shorthand syntax' do
       expect(subject).to eq(5)
     end
   end
+
+  context 'with-one-liner syntax' do
+    it { is_expected.to eq(5) }
+  end
 end
