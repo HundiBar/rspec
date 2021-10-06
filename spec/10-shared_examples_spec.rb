@@ -15,7 +15,7 @@ end
 
 RSpec.describe String do
   subject { 'abc' }
-  nclude_examples 'a Ruby object with a length method returning 3'
+  include_examples 'a Ruby object with a length method returning 3'
 
   # it 'returns the number of items' do
   #   expect(subject.length).to eq(3)
