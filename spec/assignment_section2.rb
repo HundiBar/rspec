@@ -17,3 +17,5 @@ RSpec.describe 'test of 2' do
   end
 end
 
+#5 include_examples makes repeptitive example code more dry and same for include_context
+
