@@ -23,6 +23,10 @@ RSpec.describe Card do
     expect(card.rank).to eq('Queen')
   end
 
+  it 'in new example changes dont persist' do
+    expect(card.rank).to eq('Ace')
+  end
+
   it 'has a suit' do
     # expect(@card.suit).to eq('Spades')
     expect(card.suit).to eq('Spades')
