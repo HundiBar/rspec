@@ -1,4 +1,4 @@
-RSpec.shared_contex 'commmon' do
+RSpec.shared_context 'common' do
   before do
     @foods = []
   end
@@ -10,7 +10,7 @@ RSpec.shared_contex 'commmon' do
 end
 
 RSpec.describe 'first example group' do
-  include_context 'commmon'
+  include_context 'common'
 
   it 'can use outside instance variables' do
     expect(@foods.length).to eq(0)
@@ -26,6 +26,12 @@ RSpec.describe 'first example group' do
   it 'can use shared helper methods' do
     expect(some_helper_method).to eq(5)
   end
-
 end
 
+RSpec.describe 'second example in diff file' do
+  include_context 'common'
+
+  it 'can used shaered let variables' do
+    expect(some_variable).to eq([1, 2, 3])
+  end
+end
