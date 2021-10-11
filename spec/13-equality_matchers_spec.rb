@@ -23,5 +23,18 @@ RSpec.describe 'equality matchers' do
     let(:d) { [1, 2, 3] }
     let(:e) { c }
 
+    it 'equal cares about object identity' do
+      expect(c).to eq(d)
+      expect(c).to eql(d)
+      # both going to pass as type and values same.
+      # but equal wont pass as c and d not the same location in memory.
+      # they are two different boxes with same values and type of object inside
+      # but two distinct boxes. e however, is set to equal c at that box so they are
+      # equal in all ways and equal will pass.
+
+      expect(c).to equal(e)
+
+    end
+
   end
 end
