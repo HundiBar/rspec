@@ -33,6 +33,14 @@ RSpec.describe 'equality matchers' do
       # equal in all ways and equal will pass.
 
       expect(c).to equal(e)
+      #same test just different syntax
+      expect(c).to be(e)
+
+      expect(c).not_to equal(d)
+      expect(c).not_to equal([1,2,3])
+      #as same value  but not the same object in memory
+
+
 
     end
 
