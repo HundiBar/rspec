@@ -14,13 +14,9 @@ RSpec.describe 'comparison matchers' do
     # give object directly to describe, becomes subject
     #100 becomes subject { 100 } automatically
     it { is_expected.to be > 90 }
-    it { is_expected.to be > >=100 }
+    it { is_expected.to be >=100 }
     it { is_expected.to be < 500 }
     it { is_expected.to be <= 100 }
     it { is_expected.not_to be > 105 }
-
-
-
-
   end
 end
