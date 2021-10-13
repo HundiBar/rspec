@@ -8,9 +8,8 @@ RSpec.describe 'all matcher' do
     expect([[],[],[]]).to all(be_empty)
     expect([0, 0]).to all(be_zero)
     expect([5, 7, 9]).to all(be < 10)
-
-
-
-
+  end
+  describe [5,7,9] do
+    it { is_expected.to all(be_odd) }
   end
 end
