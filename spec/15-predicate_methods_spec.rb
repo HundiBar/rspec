@@ -10,4 +10,9 @@ RSpec.describe 'predicate methods and predicate matchers' do
     expect(0).to be_zero
     expect([]).to be_empty
   end
+
+  describe 0 do
+    #use object 0 to become subject to use short syntax
+    it { is_expected.to be_zero }
+  end
 end
