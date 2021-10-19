@@ -10,7 +10,7 @@ RSpec.describe 'change matcher' do
 
   it 'accepts negative arguemnts' do
     # expect {  subject.pop }.to change { subject.length }.from(4).to(3)
-    expect { subject.pop(4) }.to change { subject.length }.by(-1)
+    expect { subject.pop }.to change { subject.length }.by(-1)
 
   end
 end
