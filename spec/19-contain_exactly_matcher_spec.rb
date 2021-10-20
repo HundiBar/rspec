@@ -13,4 +13,6 @@ RSpec.describe 'contain_exactly matcher' do
     end
   end
   it { is_expected.to contain_exactly(1,2,3) }
+  it { is_expected.to contain_exactly(2,1,3) }
+
 end
