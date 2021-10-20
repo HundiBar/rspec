@@ -10,8 +10,7 @@ RSpec.describe 'contain_exactly matcher' do
       # failure as missing will show in rspec test
       # expect(subject).to contain_exactly(3, 2, 1, 4)
       # additional element fails in comparison
-
-
     end
   end
+  it { is_expected.to contain_exactly(1,2,3) }
 end
