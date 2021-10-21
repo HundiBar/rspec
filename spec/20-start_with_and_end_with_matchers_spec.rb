@@ -16,6 +16,7 @@ RSpec.describe 'start with and end with matcher' do
       expect(subject).to start_with(:a, :b, :c)
       # if go further and have whole array check then can check for contains in if dont care about order
       # or use equality matcher to check exact order
+      expect(subject).to end_with(:d)
 
     end
   end
