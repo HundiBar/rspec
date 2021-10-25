@@ -27,6 +27,8 @@ RSpec.describe 'include matcher' do
     end
     it { is_expected.to include(:b) }
     it { is_expected.to include(b: 4) }
+    it { is_expected.not_to include(c: 4) }
+
 
 
   end
