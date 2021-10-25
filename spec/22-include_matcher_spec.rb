@@ -10,6 +10,9 @@ RSpec.describe 'include matcher' do
   describe [10, 20, 30] do
     it 'checks for inclusion in the array, regardless of order' do
       expect(subject).to include(10)
+      expect(subject).to include(10, 20)
+      expect(subject).to include(30, 20)
+
     end
   end
 end
