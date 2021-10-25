@@ -7,4 +7,9 @@ RSpec.describe 'include matcher' do
     end
     it {  is_expected.to include('choc') }
   end
+  describe [10, 20, 30] do
+    it 'checks for inclusion in the array, regardless of order' do
+      expect(subject).to include(10)
+    end
+  end
 end
