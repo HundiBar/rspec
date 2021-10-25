@@ -12,7 +12,7 @@ RSpec.describe 'include matcher' do
       expect(subject).to include(10)
       expect(subject).to include(10, 20)
       expect(subject).to include(30, 20)
-
     end
+    it { is_expected.to include(20, 30, 10) }
   end
 end
