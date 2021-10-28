@@ -14,6 +14,8 @@ RSpec.describe '' do
   end
 
   class Coffee
-
+    def drink; end
+    def discard; end
+    def purchase(number); end
   end
 end
