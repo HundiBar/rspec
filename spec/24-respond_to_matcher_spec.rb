@@ -17,3 +17,9 @@ end
 #   def discard; end
 #   def purchase(number); end
 # end
+
+RSpec.describe HotChocolate do
+  it 'confirms that an object can respond to a method' do
+    expect(subject).to respond_to(:drink)
+  end
+end
