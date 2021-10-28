@@ -28,7 +28,7 @@ RSpec.describe HotChocolate do
   it 'confirms an object can respond to a method with arguments' do
     expect(subject).to respond_to(:purchase)
     expect(subject).to respond_to(:purchase).with(1).arguments
-
-
   end
+
+  it { is_expected.to respond_to(:purchase. :discard) }
 end
