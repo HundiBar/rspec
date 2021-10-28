@@ -12,4 +12,8 @@ RSpec.describe '' do
       "Awesome, I just purchased #{number} more hot chocolate beverages"
     end
   end
+
+  class Coffee
+
+  end
 end
