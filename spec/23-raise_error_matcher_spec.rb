@@ -7,6 +7,9 @@ RSpec.describe 'raise_error matcher' do
   it 'can check for a specific error beinr raised' do
     expect { some_method }.to raise_error(NameError)
     expect { 10/0 }.to raise_error(ZeroDivisionError)
+  end
+
+  it 'check for a user-created error' do
 
   end
 end
