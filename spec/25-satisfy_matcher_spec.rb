@@ -1,6 +1,6 @@
 RSpec.describe 'satisfy matcher' do
-  subject { 'racecar' }
-  # subject { 'racecars' }
+  # subject { 'racecar' }
+  subject { 'racecars' }
 
 
   it 'is a palindrome' do
