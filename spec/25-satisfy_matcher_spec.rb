@@ -12,6 +12,8 @@ RSpec.describe 'satisfy matcher' do
     expect(subject).to satisfy('be a palindrome') do |value|
       value == value.reverse
       #can use { |value| value == value.reverse }
+      # can be as complicated block as you like but just needs to return a boolean to pass or fail
+
     end
   end
 end
