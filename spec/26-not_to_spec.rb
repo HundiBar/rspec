@@ -14,5 +14,8 @@ RSpec.describe 'the not_to method' do
     expect(5).not_to respond_to(:length)
 
     expect([:a, :b, :c]).not_to include(:d)
+
+    #need to put in {} for raise error so test suite doesnt crash. kind of bug.
+    expect { 11/3 }.not_to raise_error
   end
 end
