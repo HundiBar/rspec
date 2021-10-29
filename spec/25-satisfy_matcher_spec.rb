@@ -1,5 +1,6 @@
 RSpec.describe 'satisfy matcher' do
   # subject { 'racecar' }
+  # show failed assertion to see custom error message
   subject { 'racecars' }
 
 
