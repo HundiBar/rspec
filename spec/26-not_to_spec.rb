@@ -11,6 +11,8 @@ RSpec.describe 'the not_to method' do
     expect("Philadelphia").not_to start_with('car')
     expect("Philadelphia").not_to end_with('city')
 
+    expect(5).not_to respond_to(:length)
 
+    expect([:a, :b, :c]).not_to include(:d)
   end
 end
