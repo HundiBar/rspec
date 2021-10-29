@@ -4,6 +4,7 @@ RSpec.describe 'the not_to method' do
     #checks for same array in memory (equal)
     expect([1,2,3]).not_to equal([1,2,3])
     expect(10).not_to be_odd
+    expect([1,2,3]).not_to be_empty
 
 
   end
