@@ -16,5 +16,7 @@ RSpec.describe 'caterpillar' do
 end
 
 RSpec.describe [:usa, :canada, :mexico] do
+  it 'can check for multiple possibilities' do
 
+  end
 end
