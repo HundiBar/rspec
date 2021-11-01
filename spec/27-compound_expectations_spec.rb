@@ -17,6 +17,6 @@ end
 
 RSpec.describe [:usa, :canada, :mexico] do
   it 'can check for multiple possibilities' do
-
+    expect(subject.sample).to eq(:usa).or eq(:canada).or (:mexico)
   end
 end
