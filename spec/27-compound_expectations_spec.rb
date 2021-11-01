@@ -7,3 +7,9 @@ RSpec.describe 25 do
   end
   it {  is_expected.to be_odd and be > 20 }
 end
+
+RSpec.describe 'caterpillar' do
+  it 'supports mutiple matchers on a single line' do
+    expect(subject).to
+  end
+end
