@@ -14,3 +14,7 @@ RSpec.describe 'caterpillar' do
   end
   it {  is_expected.to start_with('cat').and end_with('pillar') }
 end
+
+RSpec.describe [:usa, :canada, :mexico] do
+
+end
