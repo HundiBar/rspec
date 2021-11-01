@@ -5,6 +5,6 @@ RSpec.describe 'firetruck' do
 end
 
 RSpec.describe 20 do
-  it {  is_expected.to be_odd.and respond_to(:times) }
+  it {  is_expected.to be_even.and respond_to(:times) }
 end
 
