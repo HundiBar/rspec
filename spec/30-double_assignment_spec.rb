@@ -6,11 +6,11 @@ RSpec.describe 'doubles' do
     expect(db.disconnect).to eq(false)
 
   end
-  it "check database connection double" do
+  it "check File system double" do
     fs = double("File System")
-    allow(db).to receive_messages(read: "Romeo and Juliet", write: false,)
-    expect(db.connect).to eq(true)
-    expect(db.disconnect).to eq(false)
+    allow(fs).to receive_messages(read: "Romeo and Juliet", write: false,)
+    expect(fs.read).to eq("Romeo and Juliet")
+    expect(fs.write).to eq(false)
 
   end
 end
