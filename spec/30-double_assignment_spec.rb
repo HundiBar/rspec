@@ -1,7 +1,6 @@
 RSpec.describe 'doubles' do
   it "check database connection double" do
-    db = double("Database Connection")
-    allow(db).to receive_messages(connect: true, disconnect: false,)
+    db = double("Database Connection", connect: true, disconnect: false)
     expect(db.connect).to eq(true)
     expect(db.disconnect).to eq(false)
 
