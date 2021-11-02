@@ -4,6 +4,6 @@ RSpec.describe 'a random double' do
     # expect(stuntman.fall_off_ladder).to eq('Ouch')
     # expect(stuntman.light_on_fire).to eq(true)
     stuntman = double("Mr.Danger")
-    allow(stuntman).to receive()
+    allow(stuntman).to receive(:fall_off_ladder)
   end
 end
