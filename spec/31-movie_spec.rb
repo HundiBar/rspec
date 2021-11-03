@@ -49,4 +49,14 @@ RSpec.describe Movie do
   # created an object that represents an actor but less complexity (ie real life API call, etc represented by sleep(3))
   let(:stuntman) { double("Mr.Danger", ready?: true, act: "Any string at all", fall_off_ladder: "Sure! Lets do it", light_on_fire: true)}
   subject { described_class.new(stuntman)}
+
+  describe 'movie shooting methods' do
+    it 'expects an actor to do 3 actions' do
+      expect(stuntman).to receive(:ready?)
+      expect(stuntman).to receive(:act)
+      expect(stuntman).to receive(:fall_off_ladder)
+      expect(stuntman).to receive(:light_on_fire)
+      subject.start_shooting
+    end
+  end
 end
