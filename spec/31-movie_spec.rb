@@ -16,4 +16,8 @@ class Actor
     "Call my agent no way"
   end
 
+  def light_on_fire
+    false
+  end
+
 end
