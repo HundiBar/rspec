@@ -37,6 +37,14 @@ class Movie
   end
 end
 
-actor = Actor.new('Brad Pitt')
-movie = Movie.new(actor)
-movie.start_shooting
+# actor = Actor.new('Brad Pitt')
+# movie = Movie.new(actor)
+# movie.start_shooting
+
+# Use a double to simulate an actor object
+# Doubles dont need to follow difficult business logic
+# just instance method behaviour
+
+RSpec.describe Movie do
+
+end
