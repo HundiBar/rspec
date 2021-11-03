@@ -22,7 +22,7 @@ class Actor
 end
 
 class Movie
-  attr_reader :Actor
+  attr_reader :actor
 
   def initialize(actor)
     @actor = actor
