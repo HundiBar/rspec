@@ -29,10 +29,11 @@ class Movie
   end
 
   def start_shooting
-    if actor.ready?
-      puts actor.act
-      puts actor.fall_off_ladder
-      puts actor.light_on_fire
+    if @actor.ready?
+      puts @actor.act
+      puts @actor.fall_off_ladder
+      puts @actor.light_on_fire
+      puts @actor.act
     end
   end
 end
@@ -55,6 +56,9 @@ RSpec.describe Movie do
       # expect(stuntman).to receive(:light_on_fire).once
       # expect(stuntman).to receive(:light_on_fire).exactly(1).times
       expect(stuntman).to receive(:light_on_fire).at_most(1).times
+
+      # expect(stuntman).to receive(:act).twice
+      expect(stuntman).to receive(:light_on_fire).exactly(2).times
       subject.start_shooting
     end
   end
