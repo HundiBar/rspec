@@ -46,5 +46,6 @@ end
 # just instance method behaviour
 
 RSpec.describe Movie do
-
+  # created an object that represents an actor but less complexity (ie real life API call, etc represented by sleep(3))
+  let(:stuntman) { double("Mr.Danger", ready?: true, act: "Any string at all", fall_off_ladder: "Sure! Lets do it", light_on_fire: true)}
 end
