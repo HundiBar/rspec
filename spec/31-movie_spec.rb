@@ -36,3 +36,5 @@ class Movie
     end
   end
 end
+
+actor = Actor.new('Brad Pitt')
