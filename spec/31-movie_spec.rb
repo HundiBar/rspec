@@ -58,7 +58,7 @@ RSpec.describe Movie do
       expect(stuntman).to receive(:light_on_fire).at_most(1).times
 
       # expect(stuntman).to receive(:act).twice
-      expect(stuntman).to receive(:light_on_fire).exactly(2).times
+      expect(stuntman).to receive(:act).exactly(2).times
       subject.start_shooting
     end
   end
