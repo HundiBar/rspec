@@ -12,4 +12,8 @@ class Actor
     'I love you baby'
   end
 
+  def fall_off_ladder
+    "Call my agent no way"
+  end
+
 end
