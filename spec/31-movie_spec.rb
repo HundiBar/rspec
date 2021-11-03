@@ -30,11 +30,13 @@ class Movie
 
   def start_shooting
     if actor.ready?
-      actor.act
-      actor.fall_off_ladder
-      actor.light_on_fire
+      puts actor.act
+      puts actor.fall_off_ladder
+      puts actor.light_on_fire
     end
   end
 end
 
 actor = Actor.new('Brad Pitt')
+movie = Movie.new(actor)
+movie.start_shooting
