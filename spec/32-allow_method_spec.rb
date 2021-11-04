@@ -16,7 +16,7 @@ RSpec.describe 'allow method review' do
     arr.push(4)
     expect(arr).to eq([1, 2, 3, 4])
 
-    # use allow to mock a complicated method on an object to stop the lengthy/complex real method when tested.
+    # use allow to mock a complicated method on an object to stop the lengthy/complex real method when testing.
 
   end
   it 'can return multiple return values in sequence' do
