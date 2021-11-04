@@ -4,7 +4,7 @@ RSpec.describe 'allow method review' do
     allow(calculator).to receive(:add).and_return(15)
     expect(calculator.add).to eq(15)
   end
-
+  # use mocking to save memory on heavy complex objects to change particlar methods/functions whilst leaving others in tact
   it 'can stub one or more methods on a real object' do
     arr = [1, 2, 3]
     # when sum called always returns 10
