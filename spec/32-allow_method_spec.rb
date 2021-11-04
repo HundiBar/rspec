@@ -19,4 +19,17 @@ RSpec.describe 'allow method review' do
     # use allow to mock a complicated method on an object to stop the lengthy/complex real method when tested.
 
   end
+  it 'can return multiple return values in sequence' do
+    #mimic pop method in a double
+    mock_array = double
+    #first pop gets c then b then subsequently nil
+    allow(mock_array).to receive(:pop).and_return(:c, :b, nil)
+    expect(mock_array.pop).to eq(:c)
+    expect(mock_array.pop).to eq(:b)
+    expect(mock_array.pop).to eq(nil)
+    expect(mock_array.pop).to eq(nil)
+    expect(mock_array.pop).to eq(nil)
+    expect(mock_array.pop).to eq(nil)
+    expect(mock_array.pop).to eq(nil)
+  end
 end
