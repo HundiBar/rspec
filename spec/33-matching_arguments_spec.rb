@@ -10,6 +10,18 @@ RSpec.describe 'matching arguments' do
     # using our double to mock behaviour
     allow(three_element_array).to receive(:first).with(be >= 3).and_return([1, 2, 3])
 
+    expect(three_element_array.first).to eq(1)
+    expect(three_element_array.first(1)).to eq([1])
+    expect(three_element_array.first(2)).to eq([1, 2])
+    expect(three_element_array.first(3)).to eq([1,2,3])
+    # final mock if first(3 and greater) to return only 1,2,3 to stub down to smaller array
+    expect(three_element_array.first(100)).to eq([1,2,3])
+
+
+
+
+
+
 
   end
 end
