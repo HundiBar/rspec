@@ -19,7 +19,7 @@ RSpec.describe Person do
   describe 'instance double' do
     it 'can only implement methods that are defined on the class' do
       # making a mock of any instance of the Person class not mocking Person class like above.
-      person = instance_double(Person)
+      person = instance_double(Person, a: "Hello", b: 20)
     end
   end
 end
