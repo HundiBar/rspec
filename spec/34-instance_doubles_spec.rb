@@ -23,7 +23,8 @@ RSpec.describe Person do
       # person = instance_double(Person, a: "Hello", #b: 20)
       person = instance_double(Person, a: "Hello")
       person = instance_double(Person)
-
+      #expection a to receive two arguments but expected with no args but we've given 2 arguments so no matching
+      allow(person).to receive(:a).with(3,10).and_return("Hello")
     end
   end
 end
