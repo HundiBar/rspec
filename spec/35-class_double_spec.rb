@@ -1,3 +1,5 @@
+#mocking the class of Deck itself so class_double
+
 # class Deck
 #   def self.build
 #     #implement business logic to build bunch of cards
