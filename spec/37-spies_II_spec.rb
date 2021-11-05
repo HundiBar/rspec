@@ -22,4 +22,7 @@ RSpec.describe Garage do
     # dont let Ruby create with 'new' class method, to intercept and return 'car' instance double
     allow(Car).to receive(:new).and_return(car)
   end
+  it 'adds a car to its storage' do
+    subject.add
+  end
 end
