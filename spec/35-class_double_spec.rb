@@ -12,6 +12,8 @@ class CardGame
   end
 end
 
-RSpec.describe '' do
-
+RSpec.describe CardGame do
+  it 'can only implement class methods that are defined on a class' do
+    class_double(Deck, build: ['Ace', 'Queen'])
+  end
 end
