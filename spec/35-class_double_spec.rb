@@ -19,8 +19,8 @@ RSpec.describe CardGame do
     #Will get an uninitialized constant Deck error as the constant is called Deck as an object so use a string to avoid that error.
 
     #as_stubbed_const make sure that all calls to class method Deck with the class double in deck_klass
-    deck_class = class_double('Deck', build: ['Ace', 'Queen']).as_stubbed_const
-    expect(deck_class).to receive(:build)
+    deck_klass = class_double('Deck', build: ['Ace', 'Queen']).as_stubbed_const
+    expect(deck_klass).to receive(:build)
     subject.start
     expect(subject.cards).to eq(['Ace', 'Queen'])
   end
