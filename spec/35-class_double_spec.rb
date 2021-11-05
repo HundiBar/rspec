@@ -14,6 +14,7 @@ end
 
 RSpec.describe CardGame do
   it 'can only implement class methods that are defined on a class' do
+    # using class double instead of double means double is as close as possible to real object as it compares to real object. Double will allow us to run non-existent methods in the class.
     class_double(Deck, build: ['Ace', 'Queen'])
   end
 end
