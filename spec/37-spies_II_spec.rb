@@ -23,6 +23,6 @@ RSpec.describe Garage do
     allow(Car).to receive(:new).and_return(car)
   end
   it 'adds a car to its storage' do
-    subject.add
+    subject.add_to_collection('Honda Civic')
   end
 end
