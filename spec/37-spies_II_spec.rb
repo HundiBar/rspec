@@ -14,3 +14,12 @@ class Garage
     @storage << Car.new(model)
   end
 end
+
+RSpec.describe Garage do
+  let(:car) { instance_double(Car) }
+
+  before do
+    # dont let Ruby create with 'new' class method, to intercept and return 'car' instance double
+    allow(Car).to receive(:new).and_return(car)
+  end
+end
