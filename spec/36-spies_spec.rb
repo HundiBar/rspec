@@ -3,6 +3,14 @@
 #spy writes after action
 #Spies automatically observe all messages received even if not explicitly told
 
-RSpec.describe '' do
+RSpec.describe 'spies' do
+  let(:animal) { spy('animal') }
 
+  it 'confirms that a message has been received' do
+    # double syntax expect before method call
+    # expect(animal).to receive(:eat_food)
+    # animal.eat_food
+    animal.eat_food
+    expect(animal).to have_received(:eat_food)
+  end
 end
