@@ -12,5 +12,6 @@ RSpec.describe 'spies' do
     # animal.eat_food
     animal.eat_food
     expect(animal).to have_received(:eat_food)
+    expect(animal).not_to have_received(:eat_human)
   end
 end
