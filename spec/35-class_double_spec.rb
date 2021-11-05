@@ -1,6 +1,7 @@
 attr_reader :cards
 class Deck
   def self.build
+    #implement business logic to build bunch of cards
   end
 
 end
