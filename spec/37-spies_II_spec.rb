@@ -24,5 +24,8 @@ RSpec.describe Garage do
   end
   it 'adds a car to its storage' do
     subject.add_to_collection('Honda Civic')
+    # check car has received 'new' and check storage array
+    expect(Car).to have_received(:new).with("Honda Civic")
+    expect(subject.storage.first).to eq(car)
   end
 end
