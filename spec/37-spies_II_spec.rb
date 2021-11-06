@@ -29,3 +29,5 @@ RSpec.describe Garage do
     expect(subject.storage.first).to eq(car)
   end
 end
+
+#end of course
